@@ -1,0 +1,10 @@
+jupyter
+seaborn
+scikit-learn 
+keras 
+tensorflow
+numpy
+pandas
+geopy
+folium
+openpyxl
