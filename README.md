@@ -4,6 +4,8 @@ The purpose of the Schengen visa project is to generate insights into the implem
 
 ## Where to start
 
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/mogenshobolth/schengen-visa/HEAD)
+
 Open the repo in binder to start exploring the notebooks.
 
 ## How to contribute
