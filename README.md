@@ -4,9 +4,17 @@ The purpose of the Schengen visa project is to generate insights into the implem
 
 ## Where to start
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/mogenshobolth/schengen-visa/HEAD)
+Visualisations of the visa issuings statistics:
+- Map of the EU/Schengen states visa issuing consulates 
+  - [2020 consular map](https://mogenshobolth.github.io/schengen-visa/html/map-visa-issuing-consultates-2020.html)
+- Map of of the EU/Schengen states visa refusal rate (not issued rate) and applications received
+  - [2020 visa statistics map](https://mogenshobolth.github.io/schengen-visa/html/map-visa-statistics-2020.html)
 
 Open the repo in binder to start exploring the notebooks.
+
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/mogenshobolth/schengen-visa/HEAD)
+
+Clone the repo locally and start analysing in Jupyter Notebooks.
 
 ## How to contribute
 
