@@ -7,8 +7,9 @@ The purpose of the Schengen visa project is to generate insights into the implem
 Visualisations of the visa issuings statistics:
 - Map of the EU/Schengen states visa issuing consulates 
   - [2020 consular map](https://mogenshobolth.github.io/schengen-visa/html/map-visa-issuing-consultates-2020.html)
-- Map of of the EU/Schengen states visa refusal rate (not issued rate) and applications received
+- Map of of the EU/Schengen states visa refusal rate (not issued rate) and applications received. Applications are on the same scale so the maps can compared over years.
   - [2020 visa statistics map](https://mogenshobolth.github.io/schengen-visa/html/map-visa-statistics-2020.html)
+  - [2019 visa statistics map](https://mogenshobolth.github.io/schengen-visa/html/map-visa-statistics-2019.html)
 
 Open the repo in binder to start exploring the notebooks.
 
