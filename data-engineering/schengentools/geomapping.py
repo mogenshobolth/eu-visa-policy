@@ -18,7 +18,8 @@ class Geocoder:
         return {
             'YAONDE': 'YAOUNDE',
             'VITSYEBSK': 'VITEBSK',
-            'BANDAR SERI BEGWAN': 'BANDAR SERI BEGAWAN'
+            'BANDAR SERI BEGWAN': 'BANDAR SERI BEGAWAN',
+            'GHIROKASTER': 'GJIROKASTER'
         }.get(city, city)
 
     def __lookup_country(self, country):
