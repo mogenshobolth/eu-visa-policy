@@ -20,6 +20,7 @@ class Parser:
         print('Renamed columns')
 
         self.df = self.df[self.df["schengen_state"].notna()]
+        self.df = self.df[self.df["origin_country"].notna()]
         print('Removed irrelevant rows such as summary rows')
 
         self.df = self.df[["schengen_state", "origin_country","origin_consulate","visas_applied", "visas_issued", "visas_not_issued"]]
