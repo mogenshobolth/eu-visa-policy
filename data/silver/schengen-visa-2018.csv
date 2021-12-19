@@ -1,4 +1,4 @@
-,eu_state,origin_country,origin_consulate,visas_applied,visas_issued,visas_not_issued,visa_refusal_rate,year
+,schengen_state,origin_country,origin_consulate,visas_applied,visas_issued,visas_not_issued,visa_refusal_rate,year
 0,Austria,ALBANIA,TIRANA,62.0,32.0,9.0,0.21951219512195122,2018
 1,Austria,ALGERIA,ALGIERS,2481.0,1658.0,822.0,0.33145161290322583,2018
 2,Austria,ARGENTINA,BUENOS AIRES,16.0,16.0,0.0,0.0,2018
