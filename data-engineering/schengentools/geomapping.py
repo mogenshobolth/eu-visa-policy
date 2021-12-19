@@ -24,7 +24,9 @@ class Geocoder:
         return {
             'HONG KONG S.A.R.': 'HONG KONG',
             'CONGO (DEMOCRATIC REPUBLIC)': 'DEMOCRATIC REPUBLIC OF THE CONGO',
-            'CONGO (BRAZZAVILLE)': 'REPUBLIC OF THE CONGO'
+            'CONGO (BRAZZAVILLE)': 'REPUBLIC OF THE CONGO',
+            'FORMER YUGOSLAV REPUBLIC OF MACEDONIA': 'MACEDONIA',
+            'HOLY SEE': 'VATICAN'
         }.get(country, country)
 
     def read_schengen_csv(self, path):
