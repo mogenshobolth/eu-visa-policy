@@ -11,6 +11,10 @@ Visualisations of the visa issuings statistics:
   - [2020 visa statistics map](https://mogenshobolth.github.io/schengen-visa/html/map-visa-statistics-2020.html)
   - [2019 visa statistics map](https://mogenshobolth.github.io/schengen-visa/html/map-visa-statistics-2019.html)
   - [2018 visa statistics map](https://mogenshobolth.github.io/schengen-visa/html/map-visa-statistics-2018.html)
+- Map comparing the refusal rates of the Schengen states. The refusal rate is calculated per state and year as the ratio of the not issued visas relative to the issued and not issued visas. 
+  - [2020 Schengen states map](https://mogenshobolth.github.io/schengen-visa/html/map-visa-statistics-compare-schengen-states-2020.html)
+  - [2019 Schengen states map](https://mogenshobolth.github.io/schengen-visa/html/map-visa-statistics-compare-schengen-states-2019.html)
+  - [2018 Schengen states map](https://mogenshobolth.github.io/schengen-visa/html/map-visa-statistics-compare-schengen-states-2018.html)
 
 Open the repo in binder to start exploring the notebooks.
 
