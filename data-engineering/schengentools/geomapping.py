@@ -19,16 +19,24 @@ class Geocoder:
             'YAONDE': 'YAOUNDE',
             'VITSYEBSK': 'VITEBSK',
             'BANDAR SERI BEGWAN': 'BANDAR SERI BEGAWAN',
-            'GHIROKASTER': 'GJIROKASTER'
+            'GHIROKASTER': 'GJIROKASTER',
+            'CIDADE DA PRAIA': 'PRAIA'
         }.get(city, city)
 
     def __lookup_country(self, country):
         return {
             'HONG KONG S.A.R.': 'HONG KONG',
             'CONGO (DEMOCRATIC REPUBLIC)': 'DEMOCRATIC REPUBLIC OF THE CONGO',
+            'CONGO, THE DEMOCRATIC REPUBLIC OF THE': 'DEMOCRATIC REPUBLIC OF THE CONGO',
             'CONGO (BRAZZAVILLE)': 'REPUBLIC OF THE CONGO',
             'FORMER YUGOSLAV REPUBLIC OF MACEDONIA': 'MACEDONIA',
-            'HOLY SEE': 'VATICAN'
+            'HOLY SEE': 'VATICAN',
+            'HOLY SEE (VATICAN CITY STATE)': 'VATICAN',
+            'LIBYAN ARAB JAMAHIRIYA': 'LIBYA',
+            'TANZANIA, UNITED REPUBLIC OF': 'TANZANIA',
+            'KOREA, REPUBLIC OF': 'SOUTH KOREA',
+            'TAIWAN, PROVINCE OF CHINA': 'TAIWAN',
+            'KOREA, DEMOCRATIC PEOPLE\'S REPUBLIC OF': 'NORTH KOREA'
         }.get(country, country)
 
     def read_schengen_csv(self, path):
