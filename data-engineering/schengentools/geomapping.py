@@ -36,7 +36,8 @@ class Geocoder:
             'TANZANIA, UNITED REPUBLIC OF': 'TANZANIA',
             'KOREA, REPUBLIC OF': 'SOUTH KOREA',
             'TAIWAN, PROVINCE OF CHINA': 'TAIWAN',
-            'KOREA, DEMOCRATIC PEOPLE\'S REPUBLIC OF': 'NORTH KOREA'
+            'KOREA, DEMOCRATIC PEOPLE\'S REPUBLIC OF': 'NORTH KOREA',
+            'MACAO S.A.R.': 'MACAO'
         }.get(country, country)
 
     def read_schengen_csv(self, path):
