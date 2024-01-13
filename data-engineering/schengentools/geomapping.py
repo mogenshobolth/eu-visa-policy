@@ -53,11 +53,11 @@ class Geocoder:
 
     def rename_cities(self):
         self.df['city'] = self.df.apply(lambda x: self.__lookup_city(x['city']), axis=1)
-        print('Renamed relevant city names to geolocator compatiable names')
+        print('Renamed relevant city names to geolocator compatible names')
 
     def rename_countries(self):
         self.df['country'] = self.df.apply(lambda x: self.__lookup_country(x['country']), axis=1)
-        print('Renamed relevant country names to geolocator compatiable names')
+        print('Renamed relevant country names to geolocator compatible names')
 
     def geocode_dataframe(self):
         self.df[['latitude', 'longitude']] = self.df.apply(lambda x: self.__lookup_location(x['country'], x['city']), axis=1)

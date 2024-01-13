@@ -14,3 +14,4 @@ dependencies:
   - geopy
   - folium
   - openpyxl
+  - xlrd
