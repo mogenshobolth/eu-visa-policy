@@ -9,7 +9,9 @@ class Geocoder:
 
     def __lookup_location(self, country, city):
         try:
-            point = self.geolocator.geocode(city + ', ' + country).point
+            location = {'city': city, 'country': country}
+            #point = self.geolocator.geocode(city + ', ' + country).point
+            point = self.geolocator.geocode(location).point
             return pd.Series({'latitude': point.latitude, 'longitude': point.longitude})
         except:
             return None
@@ -20,12 +22,26 @@ class Geocoder:
             'VITSYEBSK': 'VITEBSK',
             'BANDAR SERI BEGWAN': 'BANDAR SERI BEGAWAN',
             'GHIROKASTER': 'GJIROKASTER',
-            'CIDADE DA PRAIA': 'PRAIA'
+            'CIDADE DA PRAIA': 'PRAIA',
+            'VINNYTSYA': 'VINNYTSIA',
+            'MIAMI, FL': 'MIAMI',
+            'NEW YORK, NY': 'NEW YORK',
+            'SAN FRANCISCO, CA': 'SAN FRANCISCO',
+            'CHICAGO, IL': 'CHICAGO',
+            'HOUSTON, TX': 'HOUSTON',
+            'LOS ANGELES, CA': 'LOS ANGELES',
+            'BOSTON, MA': 'BOSTON',
+            'DETROIT, MI': 'DETROIT',
+            'NEWARK, NJ': 'NEWARK',
+            'WILLEMSTAD (CURACAO)': 'WILLEMSTAD',
+            'TAMPA, FL': 'TAMPA',
+            'NEW BEDFORD, MA': 'NEW BEDFORD',
+            'CLEVELAND, OH': 'CLEVELAND'
         }.get(city, city)
 
     def __lookup_country(self, country):
         return {
-            'HONG KONG S.A.R.': 'HONG KONG',
+            'HONG KONG S.A.R.': 'CHINA',
             'CONGO (DEMOCRATIC REPUBLIC)': 'DEMOCRATIC REPUBLIC OF THE CONGO',
             'CONGO, THE DEMOCRATIC REPUBLIC OF THE': 'DEMOCRATIC REPUBLIC OF THE CONGO',
             'CONGO (BRAZZAVILLE)': 'REPUBLIC OF THE CONGO',
@@ -37,7 +53,9 @@ class Geocoder:
             'KOREA, REPUBLIC OF': 'SOUTH KOREA',
             'TAIWAN, PROVINCE OF CHINA': 'TAIWAN',
             'KOREA, DEMOCRATIC PEOPLE\'S REPUBLIC OF': 'NORTH KOREA',
-            'MACAO S.A.R.': 'MACAO'
+            'MACAO S.A.R.': 'CHINA',
+            'IRAN, ISLAMIC REPUBLIC OF': 'IRAN',
+            'MOLDOVA, REPUBLIC OF': 'MOLDOVA'
         }.get(country, country)
 
     def read_schengen_csv(self, path):
