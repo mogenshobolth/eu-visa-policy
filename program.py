@@ -149,7 +149,10 @@ class Dataset:
     def load(self, sheets):
         for s in sheets:
             print('Processing: ' + str(s.year))
-            df = pd.read_excel('input/' + s.file_name,s.sheet)
+            if s.file_name.split(".")[-1] == 'csv':
+                df = pd.read_csv('input/' + s.file_name)
+            else:
+                df = pd.read_excel('input/' + s.file_name,s.sheet)                
             match s.format:
                 case 'alpha':
                     df.apply(lambda x: self.add_line_alpha(s.year, x), axis=1)
@@ -159,6 +162,8 @@ class Dataset:
                     df.apply(lambda x: self.add_line_gamma(s.year, x), axis=1)
                 case 'delta':
                     df.apply(lambda x: self.add_line_delta(s.year, x), axis=1)
+                case 'epsilon':
+                    df.apply(lambda x: self.add_line_epsilon(x), axis=1)
                 case _:
                     raise ValueError("Format not supported")
 
@@ -206,6 +211,15 @@ class Dataset:
             ,clean_number(x['Total C uniform visas issued (including MEV) \n'])
             ,clean_number(x['C visas not issued'])))
 
+    def add_line_epsilon(self, x):
+        self.line.append(Line(x['dYear']
+            ,str(x['receivingCountryName']).strip()
+            ,map_country(str(x['sendingCountryName']).strip())
+            ,map_city(str(x['sendingCityName']).strip())
+            ,clean_number(x['appliedABC'])
+            ,clean_number(x['issuedABC'])
+            ,clean_number(x['notIssuedABC'])))
+
 inputfiles = InputFiles()
 inputfiles.add_file_alpha('Visa statistics for consulates in 2022_en.xlsx',2022)
 inputfiles.add_file_beta('Visa statistics for consulates in 2022_en.xlsx',2022)
@@ -226,6 +240,7 @@ inputfiles.add_file_gamma('2015_consulates_schengen_visa_stats_en.xlsx',2015)
 inputfiles.add_file_alpha('2014_global_schengen_visa_stats_compilation_consulates_-_final_en.xlsx',2014)
 inputfiles.add_file('2014_global_schengen_visa_stats_compilation_consulates_-_final_en.xlsx',2014,'BG, HR, RO', 'alpha')
 inputfiles.add_file('synthese_2013_with_filters_en.xls',2013,'Complete data', 'delta')
+inputfiles.add_file('evd_visa_practice_eu.csv',None,None,'epsilon')
 
 d = Dataset()
 d.load(inputfiles.sheets)
