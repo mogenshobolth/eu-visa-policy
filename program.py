@@ -43,7 +43,8 @@ def map_country(x) -> str:
             'RUSSIA': 'RUSSIAN FEDERATION',
             'TÜRKIYE': 'TURKEY',
             'VIET NAM': 'VIETNAM',
-            'SYRIAN ARAB REPUBLIC': 'SYRIA'
+            'SYRIAN ARAB REPUBLIC': 'SYRIA',
+            'USA': 'UNITED STATES OF AMERICA'
         }.get(x, x)
 
 def map_city(x) -> str:
@@ -68,7 +69,51 @@ def map_city(x) -> str:
         'VINNYTSYA': 'VINNYTSIA',
         'WILLEMSTAD (CURACAO)': 'WILLEMSTAD',
         'BELEM, PA': 'BELEM',
-        'SAN FRANCISCO, CA': 'SAN FRANCISCO'
+        'SAN FRANCISCO, CA': 'SAN FRANCISCO',
+        'KABUl': 'KABUL',
+        'ANDORRA-LA-VELLA': 'ANDORRA LA VELLA',
+        'ROSARIO (Santa Fé)': 'ROSARIO - SANTA FE',
+        'BELÉM': 'BELEM',
+        'SALVADOR-BAHIA': 'SALVADOR DE BAHIA',
+        'SANTIAGO DE CHILE': 'SANTIAGO',
+        'GUANGZHOU (CANTON)': 'GUANGZHOU',
+        'ADDIS ABEBA': 'ADDIS ABABA',
+        'TBILISSI': 'TBILISI',
+        'PORT-AU-PRINCE': 'PORT AU PRINCE',
+        'BÉKÉSCSABA': 'BEKESCSABA',
+        'BAGDAD': 'BAGHDAD',
+        'OSAKA-KOBE': 'OSAKA',
+        'KUWAIT': 'KUWAIT CITY',
+        'LUXEMBURG': 'LUXEMBOURG',
+        'FES': 'FEZ',
+        'MARRAKECH': 'MARRAKESH',
+        'TANGER': 'TANGIER',
+        'POINTE-NOIRE': 'POINTE NOIRE',
+        'TIMIȘOARA': 'TIMISOARA',
+        'NOVOROSSIISK': 'NOVOROSSIYSK',
+        'NOVOROSSISK': 'NOVOROSSIYSK',
+        'ST. PETERSBURG': 'ST PETERSBURG',
+        'JEDDA': 'JEDDAH',
+        'BELGRAD': 'BELGRADE',
+        'CAPETOWN': 'CAPE TOWN',
+        'VALENCIA (SPAIN)': 'VALENCIA',
+        'DAR-ES-SALAAM': 'DAR ES SALAAM',
+        'PORT-OF-SPAIN': 'PORT OF SPAIN',
+        'CHERNIVITSI': 'CHERNIVTSI',
+        'KIEV': 'KYIV',
+        'LVOV': 'LVIV',
+        'ODESSA': 'ODESA',
+        'SEBASTOPOL': 'SEVASTOPOL',
+        'VINNITSA': 'VINNYTSIA',
+        'ATLANTA, GA': 'ATLANTA',
+        'PHILADELPHIA, PA': 'PHILADELPHIA',
+        'SAN JUAN (PORT RICO)': 'SAN JUAN',
+        'SAN JUAN, PR': 'SAN JUAN',
+        'WASHINGTON, DC': 'WASHINGTON',
+        'VATICAN CITY (ROME)': 'VATICAN CITY',
+        'HO CHI MINH': 'HO-CHI MINH CITY',
+        'SANA\'A': 'SANAA',
+        'SANA \'A': 'SANAA'
     }.get(x, x)
 
 @dataclass
