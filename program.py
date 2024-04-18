@@ -11,23 +11,39 @@ def clean_number(x) -> int:
 
 def map_country(x) -> str:
     return {
-            'HONG KONG S.A.R.': 'CHINA',
             'CONGO (DEMOCRATIC REPUBLIC)': 'DEMOCRATIC REPUBLIC OF THE CONGO',
             'CONGO, THE DEMOCRATIC REPUBLIC OF THE': 'DEMOCRATIC REPUBLIC OF THE CONGO',
+            'CONGO (DEMOCRATIC REPUBLIC OF)': 'DEMOCRATIC REPUBLIC OF THE CONGO',
             'CONGO (BRAZZAVILLE)': 'REPUBLIC OF THE CONGO',
-            'FORMER YUGOSLAV REPUBLIC OF MACEDONIA': 'MACEDONIA',
+            'CONGO': 'REPUBLIC OF THE CONGO',
             'HOLY SEE': 'VATICAN',
             'HOLY SEE (VATICAN CITY STATE)': 'VATICAN',
             'LIBYAN ARAB JAMAHIRIYA': 'LIBYA',
             'TANZANIA, UNITED REPUBLIC OF': 'TANZANIA',
             'KOREA, REPUBLIC OF': 'SOUTH KOREA',
-            'TAIWAN, PROVINCE OF CHINA': 'TAIWAN',
+            'KOREA (SOUTH)': 'SOUTH KOREA',
             'KOREA, DEMOCRATIC PEOPLE\'S REPUBLIC OF': 'NORTH KOREA',
+            'KOREA (NORTH)': 'NORTH KOREA',
+            'TAIWAN, PROVINCE OF CHINA': 'TAIWAN',
             'MACAO S.A.R.': 'CHINA',
+            'HONG KONG S.A.R.': 'CHINA',
+            'MACAO': 'CHINA',
+            'MACAO SAR': 'CHINA',
+            'HONG KONG SAR': 'CHINA',
             'IRAN, ISLAMIC REPUBLIC OF': 'IRAN',
             'MOLDOVA, REPUBLIC OF': 'MOLDOVA',
-            'MACAO': 'CHINA',
-            'PUERTO RICO': 'USA'
+            'PUERTO RICO': 'USA',
+            'BRUNEI': 'BRUNEI DARUSSALAM',
+            'CÔTE D\'IVOIRE': 'COTE D\'IVOIRE',
+            'LAO PEOPLE\'S DEMOCRATIC REPUBLIC': 'LAOS',
+            'NERTHERLANDS': 'NETHERLANDS',
+            'NORTH MACEDONIA': 'MACEDONIA',
+            'FORMER YUGOSLAV REPUBLIC OF MACEDONIA': 'MACEDONIA',
+            'PALESTINE': 'PALESTINIAN AUTHORITY',
+            'RUSSIA': 'RUSSIAN FEDERATION',
+            'TÜRKIYE': 'TURKEY',
+            'VIET NAM': 'VIETNAM',
+            'SYRIAN ARAB REPUBLIC': 'SYRIA'
         }.get(x, x)
 
 def map_city(x) -> str:
@@ -171,7 +187,7 @@ class Dataset:
         if pd.isna(x['Schengen State']) or pd.isna(x['Country where consulate is located']):
             return
         self.line.append(Line(reporting_year
-            ,str(x['Schengen State']).strip()
+            ,str(x['Schengen State']).strip().upper()
             ,map_country(str(x['Country where consulate is located']).strip())
             ,map_city(str(x['Consulate']).strip())
             ,clean_number(x['Uniform visas applied for'])
@@ -182,7 +198,7 @@ class Dataset:
         if pd.isna(x['Member State']) or pd.isna(x['Country where consulate is located']):
             return
         self.line.append(Line(reporting_year
-            ,str(x['Member State']).strip()
+            ,str(x['Member State']).strip().upper()
             ,map_country(str(x['Country where consulate is located']).strip())
             ,map_city(str(x['Consulate']).strip())
             ,clean_number(x['Short-stay visas applied for'])
@@ -193,7 +209,7 @@ class Dataset:
         if pd.isna(x['Schengen State']) or pd.isna(x['Country where consulate is located']):
             return
         self.line.append(Line(reporting_year
-            ,str(x['Schengen State']).strip()
+            ,str(x['Schengen State']).strip().upper()
             ,map_country(str(x['Country where consulate is located']).strip())
             ,map_city(str(x['Consulate']).strip())
             ,clean_number(x['Short-stay visas applied for'])
@@ -204,7 +220,7 @@ class Dataset:
         if pd.isna(x['Schengen State']) or pd.isna(x['Country where consulate is located']):
             return
         self.line.append(Line(reporting_year
-            ,str(x['Schengen State']).strip()
+            ,str(x['Schengen State']).strip().upper()
             ,map_country(str(x['Country where consulate is located']).strip())
             ,map_city(str(x['Consulate']).strip())
             ,clean_number(x['C visas applied for'])
@@ -213,9 +229,9 @@ class Dataset:
 
     def add_line_epsilon(self, x):
         self.line.append(Line(x['dYear']
-            ,str(x['receivingCountryName']).strip()
-            ,map_country(str(x['sendingCountryName']).strip())
-            ,map_city(str(x['sendingCityName']).strip())
+            ,str(x['receivingCountryName']).strip().upper()
+            ,map_country(str(x['sendingCountryName']).strip().upper())
+            ,map_city(str(x['sendingCityName']).strip().upper())
             ,clean_number(x['appliedABC'])
             ,clean_number(x['issuedABC'])
             ,clean_number(x['notIssuedABC'])))
