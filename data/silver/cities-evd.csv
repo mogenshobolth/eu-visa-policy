@@ -1,0 +1,392 @@
+,origin_country,origin_consulate,country,city,latitude,longitude
+0,Algeria,Algiers,Algeria,Algiers,36.7753606,3.0601882
+1,Angola,Luanda,Angola,Luanda,-8.8272699,13.2439512
+2,Argentina,Buenos Aires,Argentina,Buenos Aires,-34.6037157,-58.381642
+3,Australia,Canberra,Australia,Canberra,-35.2975906,149.1012676
+4,Austria,Vienna,Austria,Vienna,48.2083537,16.3725042
+5,Benin,Cotonou,Benin,Cotonou,6.3676953,2.4252507
+6,Bolivia,La Paz,Bolivia,La Paz,-16.4955455,-68.1336229
+7,Brazil,Sao Paulo,Brazil,Sao Paulo,-23.5506507,-46.6333824
+8,Bulgaria,Sofia,Bulgaria,Sofia,42.6977028,23.3217359
+9,Burkina Faso,Ouagadougou,Burkina Faso,Ouagadougou,12.3681873,-1.5270944
+10,Burundi,Bujumbura,Burundi,Bujumbura,-3.3638125,29.3675028
+11,Cameroon,Yaounde,Cameroon,Yaounde,3.8689867,11.5213344
+12,Canada,Montreal,Canada,Montreal,45.5031824,-73.5698065
+13,Chile,Santiago,Chile,Santiago,-33.4377756,-70.6504502
+14,China,Beijing,China,Beijing,39.9057136,116.3912972
+15,China,Shanghai,China,Shanghai,31.2323437,121.4691024
+16,Colombia,Bogota,Colombia,Bogota,4.6529539,-74.0835643
+17,Congo,Brazzaville,Congo,Brazzaville,-4.2694407,15.2712256
+18,Congo (Democratic Republic of),Lubumbashi,Congo (Democratic Republic of),Lubumbashi,,
+19,Congo (Democratic Republic of),Kinshasa,Congo (Democratic Republic of),Kinshasa,,
+20,Costa Rica,San Jose,Costa Rica,San Jose,9.9325427,-84.0795782
+21,Côte d'Ivoire,Abidjan,Côte d'Ivoire,Abidjan,5.320357,-4.016107
+22,Croatia,Zagreb,Croatia,Zagreb,45.84264135,15.962231476593626
+23,Cuba,Havana,Cuba,Havana,23.135305,-82.3589631
+24,Czech Republic,Prague,Czech Republic,Prague,50.0874654,14.4212535
+25,Ecuador,Quito,Ecuador,Quito,-0.2201641,-78.5123274
+26,Egypt,Cairo,Egypt,Cairo,30.0443879,31.2357257
+27,Ethiopia,Addis Ababa,Ethiopia,Addis Ababa,9.0358287,38.7524127
+28,Finland,Helsinki,Finland,Helsinki,60.1674881,24.9427473
+29,France,Paris,France,Paris,48.8534951,2.3483915
+30,Germany,Berlin,Germany,Berlin,52.5170365,13.3888599
+31,Greece,Athens,Greece,Athens,37.9755648,23.7348324
+32,Guinea,Conakry,Guinea,Conakry,9.5170602,-13.6998434
+33,Hong Kong SAR,Hong Kong,Hong Kong SAR,Hong Kong,,
+34,Hungary,Budapest,Hungary,Budapest,47.4978918,19.0401609
+35,India,New Delhi,India,New Delhi,28.6138954,77.2090057
+36,India,Mumbai,India,Mumbai,19.0785451,72.878176
+37,Indonesia,Jakarta,Indonesia,Jakarta,-6.175247,106.8270488
+38,Iran,Teheran,Iran,Teheran,35.6892523,51.3896004
+39,Ireland,Dublin,Ireland,Dublin,53.3493795,-6.2605593
+40,Israel,Jerusalem,Israel,Jerusalem,31.7788242,35.2257626
+41,Israel,Tel Aviv,Israel,Tel Aviv,32.0852997,34.7818064
+42,Italy,Rome,Italy,Rome,41.8933203,12.4829321
+43,Japan,Tokyo,Japan,Tokyo,35.6821936,139.762221
+44,Jordan,Amman,Jordan,Amman,31.9515694,35.9239625
+45,Kenya,Nairobi,Kenya,Nairobi,-1.3026148499999999,36.82884201813725
+46,Korea (South),Seoul,Korea (South),Seoul,37.5666791,126.9782914
+47,Kuwait,Kuwait City,Kuwait,Kuwait City,29.3796532,47.9734174
+48,Lebanon,Beirut,Lebanon,Beirut,33.8959203,35.47843
+49,Libya,Tripoli,Libya,Tripoli,32.896672,13.1777923
+50,Lithuania,Vilnius,Lithuania,Vilnius,54.6870458,25.2829111
+51,Luxembourg,Luxemburg,Luxembourg,Luxemburg,49.6112768,6.129799
+52,Malaysia,Kuala Lumpur,Malaysia,Kuala Lumpur,3.1516964,101.6942371
+53,Mali,Bamako,Mali,Bamako,12.649319,-8.000337
+54,Mexico,Mexico City,Mexico,Mexico City,19.4326296,-99.1331785
+55,Morocco,Casablanca,Morocco,Casablanca,33.5945144,-7.6200284
+56,Morocco,Rabat,Morocco,Rabat,34.02236,-6.8340222
+57,Netherlands,The Hague,Netherlands,The Hague,52.0799838,4.3113461
+58,Nigeria,Lagos,Nigeria,Lagos,6.4550575,3.3941795
+59,Pakistan,Islamabad,Pakistan,Islamabad,33.6938118,73.0651511
+60,Peru,Lima,Peru,Lima,-12.0621065,-77.0365256
+61,Philippines,Manila,Philippines,Manila,14.5906346,120.9799964
+62,Poland,Warsaw,Poland,Warsaw,52.2319581,21.0067249
+63,Portugal,Lisbon,Portugal,Lisbon,38.7077507,-9.1365919
+64,Romania,Bucharest,Romania,Bucharest,44.4361414,26.1027202
+65,Russia,Moscow,Russia,Moscow,55.7505412,37.6174782
+66,Rwanda,Kigali,Rwanda,Kigali,-1.950851,30.061507
+67,Saudi Arabia,Riyadh,Saudi Arabia,Riyadh,24.638916,46.7160104
+68,Senegal,Dakar,Senegal,Dakar,14.693425,-17.447938
+69,Serbia,Belgrade,Serbia,Belgrade,44.8178131,20.4568974
+70,Singapore,Singapore,Singapore,Singapore,1.2899175,103.8519072
+71,Slovakia,Bratislava,Slovakia,Bratislava,48.15926025,17.139658691421687
+72,Slovenia,Ljubljana,Slovenia,Ljubljana,46.0500268,14.5069289
+73,South Africa,Capetown,South Africa,Capetown,,
+74,South Africa,Johannesburg,South Africa,Johannesburg,-26.205,28.049722
+75,Spain,Madrid,Spain,Madrid,40.4167047,-3.7035825
+76,Switzerland,Bern,Switzerland,Bern,46.9484742,7.4521749
+77,Syria,Damascus,Syria,Damascus,33.5130695,36.3095814
+78,Taiwan,Taipei,Taiwan,Taipei,25.0375198,121.5636796
+79,Tanzania,Dar-es-Salaam,Tanzania,Dar-es-Salaam,-6.8160837,39.2803583
+80,Thailand,Bangkok,Thailand,Bangkok,13.7524938,100.4935089
+81,Tunisia,Tunis,Tunisia,Tunis,36.8002068,10.1857757
+82,Turkey,Ankara,Turkey,Ankara,39.9207759,32.8540497
+83,Turkey,Istanbul,Turkey,Istanbul,41.006381,28.9758715
+84,Uganda,Kampala,Uganda,Kampala,0.3177137,32.5813539
+85,Ukraine,Kiev,Ukraine,Kiev,50.4500336,30.5241361
+86,United Arab Emirates,Abu Dhabi,United Arab Emirates,Abu Dhabi,24.4538352,54.3774014
+87,United Kingdom,London,United Kingdom,London,51.5074456,-0.1277653
+88,United States of America,Los Angeles,United States of America,Los Angeles,34.0536909,-118.242766
+89,United States of America,New York,United States of America,New York,40.7127281,-74.0060152
+90,United States of America,Washington,United States of America,Washington,38.8950368,-77.0365427
+91,Venezuela,Caracas,Venezuela,Caracas,10.5060934,-66.9146008
+92,Vietnam,Hanoi,Vietnam,Hanoi,21.0283334,105.854041
+93,Zimbabwe,Harare,Zimbabwe,Harare,-17.831773,31.045686
+94,Albania,Tirana,Albania,Tirana,41.3281482,19.8184435
+96,Australia,Sydney,Australia,Sydney,-33.8698439,151.2082848
+98,Bangladesh,Dhaka,Bangladesh,Dhaka,23.7644025,90.389015
+99,Belgium,Brussels,Belgium,Brussels,50.8465573,4.351697
+102,Bosnia and Herzegovina,Sarajevo,Bosnia and Herzegovina,Sarajevo,43.8519774,18.3866868
+103,Brazil,Brasilia,Brazil,Brasilia,-15.7934036,-47.8823172
+107,Canada,Ottawa,Canada,Ottawa,45.4208777,-75.6901106
+110,China,Guangzhou,China,Guangzhou,23.1301964,113.2592945
+114,Estonia,Tallinn,Estonia,Tallinn,59.4372155,24.7453688
+115,Macedonia,Skopje,Macedonia,Skopje,41.9961816,21.4319213
+118,Germany,Hamburg,Germany,Hamburg,53.550341,10.000654
+119,Ghana,Accra,Ghana,Accra,5.5571096,-0.2012376
+126,Iraq,Baghdad,Iraq,Baghdad,33.3061701,44.3872213
+133,Latvia,Riga,Latvia,Riga,56.9493977,24.1051846
+139,Mozambique,Maputo,Mozambique,Maputo,-25.966213,32.56745
+140,Nepal,Kathmandu,Nepal,Kathmandu,27.708317,85.3205817
+142,Nicaragua,Managua,Nicaragua,Managua,12.1544035,-86.2737642
+143,Norway,Oslo,Norway,Oslo,59.9133301,10.7389701
+150,Russia,St Petersburg,Russia,St Petersburg,59.938732,30.316229
+157,South Africa,Pretoria,South Africa,Pretoria,-25.7459277,28.1879101
+159,Sweden,Stockholm,Sweden,Stockholm,59.3251172,18.0710935
+168,United Arab Emirates,Dubai,United Arab Emirates,Dubai,25.2653471,55.2924914
+172,Zambia,Lusaka,Zambia,Lusaka,-15.4163395,28.2818414
+173,Afghanistan,Kabul,Afghanistan,Kabul,34.5260109,69.1776838
+178,Armenia,Yerevan,Armenia,Yerevan,40.1777112,44.5126233
+180,Australia,Melbourne,Australia,Melbourne,-37.8142454,144.9631732
+183,Azerbaijan,Baku,Azerbaijan,Baku,40.3755885,49.8328009
+184,Bahrain,Manama,Bahrain,Manama,26.2235041,50.5822436
+186,Belarus,Minsk,Belarus,Minsk,53.9024716,27.5618225
+191,Botswana,Gaborone,Botswana,Gaborone,-24.6581357,25.9088474
+193,Brazil,Porto Alegre,Brazil,Porto Alegre,-30.0324999,-51.2303767
+194,Brazil,Recife,Brazil,Recife,-8.0584933,-34.8848193
+195,Brazil,Rio de Janeiro,Brazil,Rio de Janeiro,-22.9110137,-43.2093727
+197,Brunei Darussalam,Bandar Seri Begawan,Brunei Darussalam,Bandar Seri Begawan,4.8895453,114.9417574
+200,Cambodia,Phnom Penh,Cambodia,Phnom Penh,11.568271,104.9224426
+204,Canada,Toronto,Canada,Toronto,43.6534817,-79.3839347
+205,Canada,Vancouver,Canada,Vancouver,49.2608724,-123.113952
+216,Cyprus,Nicosia,Cyprus,Nicosia,35.1746503,33.3638783
+218,Denmark,Copenhagen,Denmark,Copenhagen,55.6867243,12.5700724
+219,Dominican Republic,Santo Domingo,Dominican Republic,Santo Domingo,18.4801972,-69.942111
+222,El Salvador,San Salvador,El Salvador,San Salvador,13.6989939,-89.1914249
+223,Eritrea,Asmara,Eritrea,Asmara,15.3389667,38.9326763
+229,Georgia,Tbilisi,Georgia,Tbilisi,41.6934591,44.8014495
+232,Guatemala,Guatemala City,Guatemala,Guatemala City,14.6424667,-90.5131361
+234,Honduras,Tegucigalpa,Honduras,Tegucigalpa,14.1057433,-87.2040052
+237,Iceland,Reykjavik,Iceland,Reykjavik,64.145981,-21.9422367
+239,India,Kolkata,India,Kolkata,22.5726459,88.3638953
+240,India,Chennai,India,Chennai,13.0836939,80.270186
+247,Italy,Milan,Italy,Milan,45.4641943,9.1896346
+248,Italy,Naples,Italy,Naples,40.8358846,14.2487679
+250,Jamaica,Kingston,Jamaica,Kingston,17.9712148,-76.7928128
+251,Japan,Osaka-Kobe,Japan,Osaka-Kobe,,
+254,Kazakhstan,Almaty,Kazakhstan,Almaty,43.2363924,76.9457275
+256,Korea (North),Pyongyang,Korea (North),Pyongyang,39.0167979,125.7473609
+259,Kyrgyzstan,Bishkek,Kyrgyzstan,Bishkek,42.8777895,74.6066926
+260,Laos,Vientiane,Laos,Vientiane,17.9640988,102.6133707
+266,Madagascar,Antananarivo,Madagascar,Antananarivo,-18.9100122,47.5255809
+267,Malawi,Lilongwe,Malawi,Lilongwe,-13.9875107,33.768144
+270,Malta,Valetta,Malta,Valetta,35.8989818,14.5136759
+271,Mauritania,Nouakchott,Mauritania,Nouakchott,18.061891799999998,-15.931148157832908
+273,Moldova,Chisinau,Moldova,Chisinau,47.0245117,28.8322923
+274,Mongolia,Ulan Bator,Mongolia,Ulan Bator,47.94093275,106.91795035225584
+277,Burma,Rangoon,Burma,Rangoon,16.7967129,96.1609916
+278,Namibia,Windhoek,Namibia,Windhoek,-22.5776104,17.0772739
+280,Netherlands,Amsterdam,Netherlands,Amsterdam,52.3730796,4.8924534
+281,New Zealand,Wellington,New Zealand,Wellington,-41.2887953,174.7772114
+283,Nigeria,Abuja,Nigeria,Abuja,9.0643305,7.4892974
+286,Oman,Muscat,Oman,Muscat,23.5882019,58.3829448
+288,Pakistan,Karachi,Pakistan,Karachi,24.8546842,67.0207055
+289,Panama,Panama City,Panama,Panama City,8.9714493,-79.5341802
+290,Paraguay,Asuncion,Paraguay,Asuncion,-25.2800459,-57.6343814
+293,Poland,Gdansk,Poland,Gdansk,54.42880315,18.798325653091226
+294,Poland,Krakow,Poland,Krakow,50.0469432,19.997153435836697
+296,Poland,Wroclaw,Poland,Wroclaw,51.1089776,17.0326689
+298,Qatar,Doha,Qatar,Doha,25.2856329,51.5264162
+300,Romania,Sibiu,Romania,Sibiu,45.7973912,24.1519202
+301,Romania,Timisoara,Romania,Timisoara,45.7538355,21.2257474
+304,Russia,Novosibirsk,Russia,Novosibirsk,54.96781445,82.95159894278376
+309,Serbia,Pristina,Serbia,Pristina,,
+315,Spain,Barcelona,Spain,Barcelona,41.3828939,2.1774322
+317,Sri Lanka,Colombo,Sri Lanka,Colombo,6.9388614,79.8542005
+318,Sudan,Khartoum,Sudan,Khartoum,15.5635972,32.5349123
+321,Switzerland,Geneva,Switzerland,Geneva,46.2047169,6.1423106290939335
+324,Tajikistan,Dushanbe,Tajikistan,Dushanbe,38.5762709,68.7863573
+327,Togo,Lome,Togo,Lome,6.130419,1.215829
+328,Trinidad and Tobago,Port-of-Spain,Trinidad and Tobago,Port-of-Spain,10.6572678,-61.5180173
+332,Turkey,Izmir,Turkey,Izmir,38.4237433,27.1428019
+333,Turkmenistan,Ashgabat,Turkmenistan,Ashgabat,37.9404648,58.3823487
+338,United Kingdom,Edinburgh,United Kingdom,Edinburgh,55.9533456,-3.1883749
+340,Uruguay,Montevideo,Uruguay,Montevideo,-34.9058916,-56.1913095
+341,United States of America,Atlanta,United States of America,Atlanta,33.7489924,-84.3902644
+342,United States of America,Boston,United States of America,Boston,42.3554334,-71.060511
+343,United States of America,Chicago,United States of America,Chicago,41.8755616,-87.6244212
+344,United States of America,Houston,United States of America,Houston,29.7589382,-95.3676974
+346,United States of America,Miami,United States of America,Miami,25.7741728,-80.19362
+348,United States of America,San Francisco,United States of America,San Francisco,37.7790262,-122.419906
+350,Uzbekistan,Tashkent,Uzbekistan,Tashkent,41.3123363,69.2787079
+353,Vietnam,Ho-Chi Minh City,Vietnam,Ho-Chi Minh City,10.7763897,106.7011391
+354,Yemen,Sana 'a,Yemen,Sana 'a,15.3538569,44.2058841
+357,Albania,Gjirokaster,Albania,Gjirokaster,40.0770871,20.1393359
+358,Albania,Korutsa,Albania,Korutsa,,
+363,Australia,Adelaide,Australia,Adelaide,-34.9281805,138.5999312
+366,Australia,Perth,Australia,Perth,-31.9558933,115.8605855
+375,Bulgaria,Plovdiv,Bulgaria,Plovdiv,42.1418541,24.7499297
+391,Egypt,Alexandria,Egypt,Alexandria,31.1991806,29.8951716
+396,Macedonia,Bitola,Macedonia,Bitola,41.0316005,21.3302511
+401,Germany,Cologne,Germany,Cologne,50.938361,6.959974
+402,Germany,Dusseldorf,Germany,Dusseldorf,51.2254018,6.7763137
+403,Germany,Frankfurt/Main,Germany,Frankfurt/Main,50.1106444,8.6820917
+404,Germany,Hannover,Germany,Hannover,52.3744779,9.7385532
+406,Germany,Leipzig,Germany,Leipzig,51.3406321,12.3747329
+407,Germany,Munich,Germany,Munich,48.1371079,11.5753822
+408,Germany,Stuttgart,Germany,Stuttgart,48.7784485,9.1800132
+420,Italy,Venice,Italy,Venice,45.4371908,12.3345898
+433,Netherlands,Rotterdam,Netherlands,Rotterdam,51.9244424,4.47775
+442,Romania,Constanța,Romania,Constanța,44.172889600000005,28.621515355297706
+445,Russia,Novorossisk,Russia,Novorossisk,44.7239578,37.7690711
+446,Saudi Arabia,Jedda,Saudi Arabia,Jedda,21.5810088,39.1653612
+449,Serbia,Nis,Serbia,Nis,43.5485333,19.7849208
+450,Serbia,Podgorica,Serbia,Podgorica,,
+455,South Africa,Durban,South Africa,Durban,-29.861825,31.009909
+468,Turkey,Edirne,Turkey,Edirne,41.6763707,26.5566834
+472,Ukraine,Mariupol,Ukraine,Mariupol,47.0957648,37.5499621
+473,Ukraine,Odessa,Ukraine,Odessa,46.4843023,30.7322878
+484,United States of America,Tampa,United States of America,Tampa,27.9477595,-82.458444
+489,Algeria,Oran,Algeria,Oran,35.7044415,-0.6502981
+490,Andorra,Andorra-La-Vella,Andorra,Andorra-La-Vella,42.5069391,1.5212467
+492,Argentina,Bahia Blanca,Argentina,Bahia Blanca,-38.7176522,-62.2654871
+494,Argentina,Cordoba,Argentina,Cordoba,-31.4166867,-64.1834193
+495,Argentina,Mendoza,Argentina,Mendoza,-32.8894155,-68.8446177
+496,Argentina,Rosario - Santa Fe,Argentina,Rosario - Santa Fe,-32.2505876,-60.99355909383007
+508,Brazil,Salvador-Bahia,Brazil,Salvador-Bahia,-12.9822499,-38.4812772
+530,Equatorial Guinea,Bata,Equatorial Guinea,Bata,1.869189,9.7720137
+531,Equatorial Guinea,Malabo,Equatorial Guinea,Malabo,3.741877,8.7740663
+535,France,Bayonne,France,Bayonne,43.4945144,-1.4736657
+536,France,Bordeaux,France,Bordeaux,44.841225,-0.5800364
+537,France,Lyon,France,Lyon,45.7578137,4.8320114
+538,France,Marseille,France,Marseille,43.2961743,5.3699525
+540,France,Perpignan,France,Perpignan,42.6985304,2.8953121
+541,Gabon,Libreville,Gabon,Libreville,0.4086518,9.4418849
+550,Haiti,Port-au-Prince,Haiti,Port-au-Prince,18.547327,-72.3395928
+561,Italy,Genova,Italy,Genova,44.40726,8.9338624
+578,Mexico,Guadalajara,Mexico,Guadalajara,20.6720375,-103.338396
+580,Mexico,Monterrey,Mexico,Monterrey,25.6802019,-100.315258
+581,Morocco,Agadir,Morocco,Agadir,30.4205162,-9.5838532
+583,Morocco,Nador,Morocco,Nador,35.1739922,-2.9281198
+585,Morocco,Tangier,Morocco,Tangier,35.7642313,-5.842961427833071
+586,Morocco,Tetouan,Morocco,Tetouan,35.570175,-5.3742776
+600,Portugal,Porto,Portugal,Porto,41.1494512,-8.6107884
+601,United States of America,San Juan (Port Rico),United States of America,San Juan (Port Rico),,
+616,Switzerland,Zurich,Switzerland,Zurich,47.3744489,8.5410422
+627,United Kingdom,Manchester,United Kingdom,Manchester,53.4794892,-2.2451148
+634,United States of America,New Orleans,United States of America,New Orleans,29.9759983,-90.0782127
+643,Algeria,Annaba,Algeria,Annaba,36.8982165,7.7549272
+669,Cameroon,Douala,Cameroon,Douala,4.0429408,9.706203
+670,Cameroon,Garoua,Cameroon,Garoua,9.3070698,13.3934527
+676,Cape Verde,Praia,Cape Verde,Praia,14.9162811,-23.5095095
+677,Central African Republic,Bangui,Central African Republic,Bangui,4.3635118,18.5835913
+678,Chad,N'Djamena,Chad,N'Djamena,12.1191543,15.0502758
+683,China,Wuhan,China,Wuhan,30.5951051,114.2999353
+685,Comoros,Moroni,Comoros,Moroni,-11.6931255,43.2543044
+687,Congo,Pointe-Noire,Congo,Pointe-Noire,-4.7975373,11.8503297
+696,Djibouti,Djibouti,Djibouti,Djibouti,11.5936903,43.1472724
+705,Fiji,Suva,Fiji,Suva,-18.1415884,178.4421662
+716,Guinea-Bissau,Bissau,Guinea-Bissau,Bissau,11.861324,-15.583055
+723,India,Pondichery,India,Pondichery,11.9340568,79.8306447
+728,Israel,Haifa,Israel,Haifa,32.8191218,34.9983856
+745,Madagascar,Antsiranana,Madagascar,Antsiranana,-12.2779134,49.2913394
+746,Madagascar,Mahajanga,Madagascar,Mahajanga,-15.7181492,46.3172577
+748,Madagascar,Toamasina,Madagascar,Toamasina,-18.1553985,49.4098352
+753,Mauritius,Port Louis,Mauritius,Port Louis,-20.1624522,57.5028044
+756,Monaco,Monaco,Monaco,Monaco,43.7311424,7.4197576
+759,Morocco,Fez,Morocco,Fez,34.0346534,-5.0161926
+760,Morocco,Marrakesh,Morocco,Marrakesh,31.6258257,-7.9891608
+771,Niger,Niamey,Niger,Niamey,13.524834,2.109823
+778,Papua New Guinea,Port Moresby,Papua New Guinea,Port Moresby,-9.4743301,147.1599504
+789,Saint Lucia,Castries,Saint Lucia,Castries,14.0095966,-60.9902359
+793,Senegal,St Louis,Senegal,St Louis,16.0280445,-16.5048686
+795,Seychelles,Victoria,Seychelles,Victoria,-4.6232085,55.452359
+804,Suriname,Paramaribo,Suriname,Paramaribo,5.8247628,-55.1703941
+809,Syria,Aleppo,Syria,Aleppo,36.19924,37.1637253
+816,Tunisia,Sfax,Tunisia,Sfax,34.7394361,10.7604024
+839,Vanuatu,Port Vila,Vanuatu,Port Vila,-17.7414972,168.3150163
+847,Albania,Scutari,Albania,Scutari,42.0681371,19.5121437
+849,Albania,Valona,Albania,Valona,40.4707602,19.4912716
+855,Argentina,Mar del Plata,Argentina,Mar del Plata,-37.9977225,-57.5482703
+857,Argentina,La Plata,Argentina,La Plata,-34.9206797,-57.9537638
+861,Australia,Brisbane,Australia,Brisbane,-27.4689682,153.0234991
+874,Brazil,Belo Horizonte,Brazil,Belo Horizonte,-19.9227318,-43.9450948
+876,Brazil,Curitiba,Brazil,Curitiba,-25.4295963,-49.2712724
+883,Canada,Edmonton,Canada,Edmonton,53.5462055,-113.491241
+897,Croatia,Rijeka,Croatia,Rijeka,45.3267976,14.442208
+898,Croatia,Split,Croatia,Split,43.5116383,16.4399659
+942,Libya,Benghazi,Libya,Benghazi,32.1288331,20.0817204
+974,San Marino,San Marino,San Marino,San Marino,43.9363996,12.4466991
+983,Slovenia,Koper,Slovenia,Koper,45.5479864,13.7304781
+994,Switzerland,Basel,Switzerland,Basel,47.5581077,7.5878261
+996,Switzerland,Lausanne,Switzerland,Lausanne,46.5218269,6.6327025
+997,Switzerland,Lugano,Switzerland,Lugano,46.0050102,8.9520281
+998,Switzerland,St Gallen,Switzerland,St Gallen,47.425618,9.3762397
+1012,United Kingdom,Bedford,United Kingdom,Bedford,52.1363806,-0.4675041
+1019,United States of America,Detroit,United States of America,Detroit,42.3315509,-83.0466403
+1024,United States of America,Philadelphia,United States of America,Philadelphia,39.9527237,-75.1635262
+1029,Venezuela,Maracay,Venezuela,Maracay,10.2375144,-67.5890216
+1038,France,Strasbourg,France,Strasbourg,48.584614,7.7507127
+1062,Belgium,Antwerpen,Belgium,Antwerpen,51.2211097,4.3997081
+1132,Netherlands,Aruba,Netherlands,Aruba,12.51756625,-69.98186415210564
+1133,Netherlands,Willemstad (Curacao),Netherlands,Willemstad (Curacao),,
+1213,Germany,Bonn,Germany,Bonn,50.735851,7.10066
+1278,Angola,Benguela,Angola,Benguela,-12.5790048,13.4037117
+1286,Brazil,Belém,Brazil,Belém,-1.45056,-48.4682453
+1295,Brazil,Santos,Brazil,Santos,-23.9335988,-46.3286399
+1297,Canada,Hamilton,Canada,Hamilton,43.2560802,-79.8728583
+1313,France,Lille,France,Lille,50.6365654,3.0635282
+1325,India,Goa,India,Goa,28.0881033,93.3835385
+1336,Macao SAR,Macao,Macao SAR,Macao,,
+1339,Mozambique,Beira,Mozambique,Beira,-19.828707,34.841782
+1350,São Tomé and Príncipe,Sao Tome,São Tomé and Príncipe,Sao Tome,0.3389242,6.7313031
+1360,Spain,Sevilla,Spain,Sevilla,37.3886303,-5.9953403
+1361,Spain,Vigo,Spain,Vigo,42.1964491,-8.7117809
+1367,Timor-Leste,Dili,Timor-Leste,Dili,-8.5536809,125.5784093
+1374,United States of America,Newark,United States of America,Newark,40.735657,-74.1723667
+1375,United States of America,"New Bedford, Ma",United States of America,"New Bedford, Ma",,
+1377,United States of America,Providence,United States of America,Providence,41.8239891,-71.4128343
+1381,Venezuela,Valencia,Venezuela,Valencia,10.170026,-68.0003987
+1399,Estonia,Tartu,Estonia,Tartu,58.3801207,26.72245
+1431,Russia,Murmansk,Russia,Murmansk,68.970665,33.07497
+1433,Russia,Petrozavodsk,Russia,Petrozavodsk,61.7900426,34.390007
+1441,Spain,Las Palmas de Gran Canaria,Spain,Las Palmas de Gran Canaria,28.1288694,-15.4349015
+1618,United States of America,Minneapolis,United States of America,Minneapolis,44.9772995,-93.2654692
+1658,Germany,Dresden,Germany,Dresden,51.0493286,13.7381437
+1693,Poland,Katowice,Poland,Katowice,50.2598987,19.0215852
+1700,Russia,Yekaterinburg,Russia,Yekaterinburg,56.839104,60.60825
+1706,Slovakia,Košice,Slovakia,Košice,48.7172272,21.2496774
+1720,Ukraine,Lviv,Ukraine,Lviv,49.841952,24.0315921
+1763,Germany,Flensburg,Germany,Flensburg,54.7833021,9.4333264
+1811,Poland,Sejny,Poland,Sejny,54.1101732,23.347142081833674
+1823,Serbia,Subotica,Serbia,Subotica,46.1002058,19.6653273
+1828,Spain,Malaga,Spain,Malaga,36.7213028,-4.4216366
+1830,Spain,Bilbao,Spain,Bilbao,43.2630018,-2.9350039
+1842,Ukraine,Beregovo,Ukraine,Beregovo,48.2050985,22.6453246
+1847,Ukraine,Uzhhorod,Ukraine,Uzhhorod,48.6223731,22.3022572
+1882,Russia,Pskov,Russia,Pskov,57.8173923,28.3343465
+1891,Belarus,Vitsyebsk,Belarus,Vitsyebsk,,
+1923,Belarus,Grodno,Belarus,Grodno,53.6834599,23.8342648
+1950,Russia,Kaliningrad,Russia,Kaliningrad,54.710128,20.5105838
+1953,Russia,Sovetsk,Russia,Sovetsk,55.0809688,21.8882673
+1981,Croatia,Osijek,Croatia,Osijek,45.5548793,18.6953685
+2031,Romania,Cluj-Napoca,Romania,Cluj-Napoca,46.769379,23.5899542
+2071,Belarus,Brest,Belarus,Brest,52.093751,23.6851851
+2081,Bulgaria,Varna,Bulgaria,Varna,43.2073873,27.9166653
+2097,Czech Republic,Ostrava,Czech Republic,Ostrava,49.8349139,18.2820084
+2157,Russia,Irkutsk,Russia,Irkutsk,52.2891225,104.279829
+2170,Sweden,Malmö,Sweden,Malmö,55.6052931,13.0001566
+2180,Ukraine,Kharkov,Ukraine,Kharkov,49.9923181,36.2310146
+2182,Ukraine,Luck,Ukraine,Luck,50.7450733,25.320078
+2201,Austria,Klagenfurt,Austria,Klagenfurt,46.623943,14.3075976
+2217,Holy See,Vatican City (Rome),Holy See,Vatican City (Rome),,
+2224,Italy,Trieste,Italy,Trieste,45.6496485,13.7772781
+2256,Czech Republic,Brno,Czech Republic,Brno,49.1922443,16.6113382
+2266,Hungary,Békéscsaba,Hungary,Békéscsaba,46.6798003,21.0985425
+2750,Montenegro,Podgorica,Montenegro,Podgorica,42.4415238,19.2621081
+2884,Kazakhstan,Astana,Kazakhstan,Astana,51.1282205,71.4306682
+3511,United Kingdom,Hamilton (Bermuda),United Kingdom,Hamilton (Bermuda),,
+3542,France,Nogent-Sur-Marne,France,Nogent-Sur-Marne,48.8387639,2.4916592
+3543,France,Orléans,France,Orléans,47.9027336,1.9086066
+3545,France,Toulouse,France,Toulouse,43.6044622,1.4442469
+3546,France,Tours,France,Tours,47.3900474,0.6889268
+3547,France,Versailles,France,Versailles,48.8035403,2.1266886
+3893,Georgia,Poti,Georgia,Poti,42.141614,41.6748028
+3899,Greece,Thessaloniki,Greece,Thessaloniki,40.6403167,22.9352716
+3943,Ukraine,Donetsk,Ukraine,Donetsk,48.0158753,37.8013407
+4235,Spain,Valencia (Spain),Spain,Valencia (Spain),,
+4541,United States of America,Cleveland,United States of America,Cleveland,41.4996574,-81.6936772
+4747,Hungary,Szeged,Hungary,Szeged,46.2546312,20.1486016
+4780,Russia,Rostov,Russia,Rostov,47.2216548,39.7096061
+4785,Serbia,Vršac,Serbia,Vršac,45.1211263,21.2960485
+4803,Ukraine,Chernivitsi,Ukraine,Chernivitsi,,
+4912,Bhutan,Thimphu,Bhutan,Thimphu,27.4713546,89.6336729
+5028,China,Chengdu,China,Chengdu,30.6598628,104.0633717
+5120,Romania,Timișoara,Romania,Timișoara,45.7538355,21.2257474
+5848,Venezuela,Maracaibo,Venezuela,Maracaibo,10.6498095,-71.6443596
+6909,Romania,Miercurea Ciuc,Romania,Miercurea Ciuc,46.3614042,25.8026675
+7721,Kosovo,Pristina,Kosovo,Pristina,42.6638771,21.1640849
+10328,Bolivia,Santa Cruz de la Sierra,Bolivia,Santa Cruz de la Sierra,-17.7834936,-63.1820853
+10354,Ecuador,Guayaquil,Ecuador,Guayaquil,-2.1900563,-79.8868741
+10529,Comoros,Mutsamudu,Comoros,Mutsamudu,-12.168846,44.3942831
+12055,Turkey,Bursa,Turkey,Bursa,40.182737,29.0675481
+12171,Hungary,Gyula,Hungary,Gyula,46.6438656,21.2747575
+12181,Italy,Turin,Italy,Turin,45.0677551,7.6824892
+13355,Congo (Democratic Republic of),Matadi,Congo (Democratic Republic of),Matadi,,
+14799,India,Bangalore,India,Bangalore,12.9767936,77.590082
+15167,Ukraine,Sebastopol,Ukraine,Sebastopol,44.6054434,33.5220842
+15168,Ukraine,Vinnitsa,Ukraine,Vinnitsa,49.2307981,28.486821812502342
+15536,Iraq,Erbil,Iraq,Erbil,36.1911653,44.0094294
+15582,Palestinian Authority,Ramallah,Palestinian Authority,Ramallah,,
+16231,China,Chongqing,China,Chongqing,29.5656729,106.5479189

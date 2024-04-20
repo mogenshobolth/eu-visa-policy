@@ -9,8 +9,7 @@ class Geocoder:
 
     def __lookup_location(self, country, city):
         try:
-            location = {'city': city, 'country': country}
-            #point = self.geolocator.geocode(city + ', ' + country).point
+            location = { 'country': country, 'city': city }
             point = self.geolocator.geocode(location).point
             return pd.Series({'latitude': point.latitude, 'longitude': point.longitude})
         except:
@@ -23,20 +22,22 @@ class Geocoder:
             'BANDAR SERI BEGWAN': 'BANDAR SERI BEGAWAN',
             'GHIROKASTER': 'GJIROKASTER',
             'CIDADE DA PRAIA': 'PRAIA',
-            'VINNYTSYA': 'VINNYTSIA',
             'MIAMI, FL': 'MIAMI',
             'NEW YORK, NY': 'NEW YORK',
-            'SAN FRANCISCO, CA': 'SAN FRANCISCO',
+            'SAN FRANCISCO': 'SAN FRANCISCO',
             'CHICAGO, IL': 'CHICAGO',
             'HOUSTON, TX': 'HOUSTON',
             'LOS ANGELES, CA': 'LOS ANGELES',
             'BOSTON, MA': 'BOSTON',
             'DETROIT, MI': 'DETROIT',
             'NEWARK, NJ': 'NEWARK',
-            'WILLEMSTAD (CURACAO)': 'WILLEMSTAD',
             'TAMPA, FL': 'TAMPA',
             'NEW BEDFORD, MA': 'NEW BEDFORD',
-            'CLEVELAND, OH': 'CLEVELAND'
+            'CLEVELAND, OH': 'CLEVELAND',
+            'VINNYTSYA': 'VINNYTSIA',
+            'WILLEMSTAD (CURACAO)': 'WILLEMSTAD',
+            'BELEM, PA': 'BELEM',
+            'SAN FRANCISCO, CA': 'SAN FRANCISCO'
         }.get(city, city)
 
     def __lookup_country(self, country):
@@ -55,7 +56,9 @@ class Geocoder:
             'KOREA, DEMOCRATIC PEOPLE\'S REPUBLIC OF': 'NORTH KOREA',
             'MACAO S.A.R.': 'CHINA',
             'IRAN, ISLAMIC REPUBLIC OF': 'IRAN',
-            'MOLDOVA, REPUBLIC OF': 'MOLDOVA'
+            'MOLDOVA, REPUBLIC OF': 'MOLDOVA',
+            'MACAO': 'CHINA',
+            'PUERTO RICO': 'USA'
         }.get(country, country)
 
     def read_schengen_csv(self, path):
