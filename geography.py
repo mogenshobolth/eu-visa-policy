@@ -11,8 +11,9 @@ def map_country(x) -> str:
             'CONGO (BRAZZAVILLE)': 'CONGO, REP.',
             'CONGO': 'CONGO, REP.',
             'REPUBLIC OF THE CONGO': 'CONGO, REP.',
-            'HOLY SEE': 'VATICAN',
-            'HOLY SEE (VATICAN CITY STATE)': 'VATICAN',
+            'HOLY SEE': 'ITALY',
+            'HOLY SEE (VATICAN CITY STATE)': 'ITALY',
+            'VATICAN': 'ITALY',
             'LIBYAN ARAB JAMAHIRIYA': 'LIBYA',
             'TANZANIA, UNITED REPUBLIC OF': 'TANZANIA',
             'KOREA, REPUBLIC OF': 'KOREA, REP.',
@@ -29,7 +30,6 @@ def map_country(x) -> str:
             'MACAO SAR': 'CHINA',
             'HONG KONG SAR': 'CHINA',
             'MOLDOVA, REPUBLIC OF': 'MOLDOVA',
-            'PUERTO RICO': 'USA',
             'BRUNEI': 'BRUNEI DARUSSALAM',
             'CÔTE D\'IVOIRE': 'CÔTE D’IVOIRE',
             'COTE D\'IVOIRE': 'CÔTE D’IVOIRE',
@@ -38,7 +38,6 @@ def map_country(x) -> str:
             'NERTHERLANDS': 'NETHERLANDS',
             'MACEDONIA': 'NORTH MACEDONIA',
             'FORMER YUGOSLAV REPUBLIC OF MACEDONIA': 'NORTH MACEDONIA',
-            'PALESTINE': 'PALESTINIAN AUTHORITY',
             'RUSSIA': 'RUSSIAN FEDERATION',
             'TURKEY': 'TÜRKIYE',
             'VIET NAM': 'VIETNAM',
@@ -53,12 +52,81 @@ def map_country(x) -> str:
             'VENEZUELA': 'VENEZUELA, RB',
             'KYRGYZSTAN': 'KYRGYZ REPUBLIC',
             'PALESTINIAN AUTHORITY': 'WEST BANK AND GAZA',
+            'PALESTINE': 'WEST BANK AND GAZA',
             'CAPE VERDE': 'CABO VERDE',
             'SAO TOME AND PRINCIPE': 'SÃO TOMÉ AND PRÍNCIPE',
-            'VATICAN': 'ITALY',
             'YEMEN': 'YEMEN, REP.',
             'BURMA': 'MYANMAR'
         }.get(x, x)
+
+def map_city(x) -> str:
+    return {
+        'YAONDE': 'YAOUNDE',
+        'VITSYEBSK': 'VITEBSK',
+        'BANDAR SERI BEGWAN': 'BANDAR SERI BEGAWAN',
+        'GHIROKASTER': 'GJIROKASTER',
+        'CIDADE DA PRAIA': 'PRAIA',
+        'MIAMI, FL': 'MIAMI',
+        'NEW YORK, NY': 'NEW YORK',
+        'SAN FRANCISCO': 'SAN FRANCISCO',
+        'CHICAGO, IL': 'CHICAGO',
+        'HOUSTON, TX': 'HOUSTON',
+        'LOS ANGELES, CA': 'LOS ANGELES',
+        'BOSTON, MA': 'BOSTON',
+        'DETROIT, MI': 'DETROIT',
+        'NEWARK, NJ': 'NEWARK',
+        'TAMPA, FL': 'TAMPA',
+        'NEW BEDFORD, MA': 'NEW BEDFORD',
+        'CLEVELAND, OH': 'CLEVELAND',
+        'VINNYTSYA': 'VINNYTSIA',
+        'WILLEMSTAD (CURACAO)': 'WILLEMSTAD',
+        'BELEM, PA': 'BELEM',
+        'SAN FRANCISCO, CA': 'SAN FRANCISCO',
+        'KABUl': 'KABUL',
+        'ANDORRA-LA-VELLA': 'ANDORRA LA VELLA',
+        'ROSARIO (Santa Fé)': 'ROSARIO - SANTA FE',
+        'BELÉM': 'BELEM',
+        'SALVADOR-BAHIA': 'SALVADOR DE BAHIA',
+        'SANTIAGO DE CHILE': 'SANTIAGO',
+        'GUANGZHOU (CANTON)': 'GUANGZHOU',
+        'ADDIS ABEBA': 'ADDIS ABABA',
+        'TBILISSI': 'TBILISI',
+        'PORT-AU-PRINCE': 'PORT AU PRINCE',
+        'BÉKÉSCSABA': 'BEKESCSABA',
+        'BAGDAD': 'BAGHDAD',
+        'OSAKA-KOBE': 'OSAKA',
+        'KUWAIT': 'KUWAIT CITY',
+        'LUXEMBURG': 'LUXEMBOURG',
+        'FES': 'FEZ',
+        'MARRAKECH': 'MARRAKESH',
+        'TANGER': 'TANGIER',
+        'POINTE-NOIRE': 'POINTE NOIRE',
+        'TIMIȘOARA': 'TIMISOARA',
+        'NOVOROSSIISK': 'NOVOROSSIYSK',
+        'NOVOROSSISK': 'NOVOROSSIYSK',
+        'ST. PETERSBURG': 'ST PETERSBURG',
+        'JEDDA': 'JEDDAH',
+        'BELGRAD': 'BELGRADE',
+        'CAPETOWN': 'CAPE TOWN',
+        'VALENCIA (SPAIN)': 'VALENCIA',
+        'DAR-ES-SALAAM': 'DAR ES SALAAM',
+        'PORT-OF-SPAIN': 'PORT OF SPAIN',
+        'CHERNIVITSI': 'CHERNIVTSI',
+        'KIEV': 'KYIV',
+        'LVOV': 'LVIV',
+        'ODESSA': 'ODESA',
+        'SEBASTOPOL': 'SEVASTOPOL',
+        'VINNITSA': 'VINNYTSIA',
+        'ATLANTA, GA': 'ATLANTA',
+        'PHILADELPHIA, PA': 'PHILADELPHIA',
+        'SAN JUAN (PORT RICO)': 'SAN JUAN',
+        'SAN JUAN, PR': 'SAN JUAN',
+        'WASHINGTON, DC': 'WASHINGTON',
+        'VATICAN CITY (ROME)': 'VATICAN CITY',
+        'HO CHI MINH': 'HO-CHI MINH CITY',
+        'SANA\'A': 'SANAA',
+        'SANA \'A': 'SANAA'
+    }.get(x, x)
 
 @dataclass
 class Country:
@@ -91,15 +159,10 @@ class CountryList:
         self.countries.append(Country(str(x['Code']), str(x['Economy']), str(x['Region']), income_group))
 
     def get(self, name):
+        name = name.strip().upper()
         name = map_country(name)
         try:
             c = next(x for x in self.countries if x.name.upper() == name)
             return c
         except StopIteration:
             raise ValueError('Not found: ' + name)
-
-cl = CountryList()
-cl.load()
-
-df = pd.read_csv('output/visitor-visa-statistics.csv')
-df.apply(lambda x: cl.get(x['consulate_country']), axis=1)

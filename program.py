@@ -1,120 +1,14 @@
 import csv
 import pandas as pd
-import numpy as np
+import geography
 from dataclasses import dataclass, field
+from geography import Country, CountryList
 
 def clean_number(x) -> int:
     if pd.isna(x) or x < 0:
         return 0
     else:
         return int(x)
-
-def map_country(x) -> str:
-    return {
-            'CONGO (DEMOCRATIC REPUBLIC)': 'DEMOCRATIC REPUBLIC OF THE CONGO',
-            'CONGO, THE DEMOCRATIC REPUBLIC OF THE': 'DEMOCRATIC REPUBLIC OF THE CONGO',
-            'CONGO (DEMOCRATIC REPUBLIC OF)': 'DEMOCRATIC REPUBLIC OF THE CONGO',
-            'CONGO (BRAZZAVILLE)': 'REPUBLIC OF THE CONGO',
-            'CONGO': 'REPUBLIC OF THE CONGO',
-            'HOLY SEE': 'VATICAN',
-            'HOLY SEE (VATICAN CITY STATE)': 'VATICAN',
-            'LIBYAN ARAB JAMAHIRIYA': 'LIBYA',
-            'TANZANIA, UNITED REPUBLIC OF': 'TANZANIA',
-            'KOREA, REPUBLIC OF': 'SOUTH KOREA',
-            'KOREA (SOUTH)': 'SOUTH KOREA',
-            'KOREA, DEMOCRATIC PEOPLE\'S REPUBLIC OF': 'NORTH KOREA',
-            'KOREA (NORTH)': 'NORTH KOREA',
-            'TAIWAN, PROVINCE OF CHINA': 'TAIWAN',
-            'MACAO S.A.R.': 'CHINA',
-            'HONG KONG S.A.R.': 'CHINA',
-            'MACAO': 'CHINA',
-            'MACAO SAR': 'CHINA',
-            'HONG KONG SAR': 'CHINA',
-            'IRAN, ISLAMIC REPUBLIC OF': 'IRAN',
-            'MOLDOVA, REPUBLIC OF': 'MOLDOVA',
-            'PUERTO RICO': 'USA',
-            'BRUNEI': 'BRUNEI DARUSSALAM',
-            'CÔTE D\'IVOIRE': 'COTE D\'IVOIRE',
-            'LAO PEOPLE\'S DEMOCRATIC REPUBLIC': 'LAOS',
-            'NERTHERLANDS': 'NETHERLANDS',
-            'NORTH MACEDONIA': 'MACEDONIA',
-            'FORMER YUGOSLAV REPUBLIC OF MACEDONIA': 'MACEDONIA',
-            'PALESTINE': 'PALESTINIAN AUTHORITY',
-            'RUSSIA': 'RUSSIAN FEDERATION',
-            'TÜRKIYE': 'TURKEY',
-            'VIET NAM': 'VIETNAM',
-            'SYRIAN ARAB REPUBLIC': 'SYRIA',
-            'USA': 'UNITED STATES OF AMERICA'
-        }.get(x, x)
-
-def map_city(x) -> str:
-    return {
-        'YAONDE': 'YAOUNDE',
-        'VITSYEBSK': 'VITEBSK',
-        'BANDAR SERI BEGWAN': 'BANDAR SERI BEGAWAN',
-        'GHIROKASTER': 'GJIROKASTER',
-        'CIDADE DA PRAIA': 'PRAIA',
-        'MIAMI, FL': 'MIAMI',
-        'NEW YORK, NY': 'NEW YORK',
-        'SAN FRANCISCO': 'SAN FRANCISCO',
-        'CHICAGO, IL': 'CHICAGO',
-        'HOUSTON, TX': 'HOUSTON',
-        'LOS ANGELES, CA': 'LOS ANGELES',
-        'BOSTON, MA': 'BOSTON',
-        'DETROIT, MI': 'DETROIT',
-        'NEWARK, NJ': 'NEWARK',
-        'TAMPA, FL': 'TAMPA',
-        'NEW BEDFORD, MA': 'NEW BEDFORD',
-        'CLEVELAND, OH': 'CLEVELAND',
-        'VINNYTSYA': 'VINNYTSIA',
-        'WILLEMSTAD (CURACAO)': 'WILLEMSTAD',
-        'BELEM, PA': 'BELEM',
-        'SAN FRANCISCO, CA': 'SAN FRANCISCO',
-        'KABUl': 'KABUL',
-        'ANDORRA-LA-VELLA': 'ANDORRA LA VELLA',
-        'ROSARIO (Santa Fé)': 'ROSARIO - SANTA FE',
-        'BELÉM': 'BELEM',
-        'SALVADOR-BAHIA': 'SALVADOR DE BAHIA',
-        'SANTIAGO DE CHILE': 'SANTIAGO',
-        'GUANGZHOU (CANTON)': 'GUANGZHOU',
-        'ADDIS ABEBA': 'ADDIS ABABA',
-        'TBILISSI': 'TBILISI',
-        'PORT-AU-PRINCE': 'PORT AU PRINCE',
-        'BÉKÉSCSABA': 'BEKESCSABA',
-        'BAGDAD': 'BAGHDAD',
-        'OSAKA-KOBE': 'OSAKA',
-        'KUWAIT': 'KUWAIT CITY',
-        'LUXEMBURG': 'LUXEMBOURG',
-        'FES': 'FEZ',
-        'MARRAKECH': 'MARRAKESH',
-        'TANGER': 'TANGIER',
-        'POINTE-NOIRE': 'POINTE NOIRE',
-        'TIMIȘOARA': 'TIMISOARA',
-        'NOVOROSSIISK': 'NOVOROSSIYSK',
-        'NOVOROSSISK': 'NOVOROSSIYSK',
-        'ST. PETERSBURG': 'ST PETERSBURG',
-        'JEDDA': 'JEDDAH',
-        'BELGRAD': 'BELGRADE',
-        'CAPETOWN': 'CAPE TOWN',
-        'VALENCIA (SPAIN)': 'VALENCIA',
-        'DAR-ES-SALAAM': 'DAR ES SALAAM',
-        'PORT-OF-SPAIN': 'PORT OF SPAIN',
-        'CHERNIVITSI': 'CHERNIVTSI',
-        'KIEV': 'KYIV',
-        'LVOV': 'LVIV',
-        'ODESSA': 'ODESA',
-        'SEBASTOPOL': 'SEVASTOPOL',
-        'VINNITSA': 'VINNYTSIA',
-        'ATLANTA, GA': 'ATLANTA',
-        'PHILADELPHIA, PA': 'PHILADELPHIA',
-        'SAN JUAN (PORT RICO)': 'SAN JUAN',
-        'SAN JUAN, PR': 'SAN JUAN',
-        'WASHINGTON, DC': 'WASHINGTON',
-        'VATICAN CITY (ROME)': 'VATICAN CITY',
-        'HO CHI MINH': 'HO-CHI MINH CITY',
-        'SANA\'A': 'SANAA',
-        'SANA \'A': 'SANAA'
-    }.get(x, x)
 
 @dataclass
 class InputFile:
@@ -152,9 +46,9 @@ class Line:
     
     reporting_year: int
     
-    reporting_state: str
+    reporting_state: Country
     
-    consulate_country: str
+    consulate_country: Country
     
     consulate_city: str
 
@@ -172,8 +66,10 @@ class Line:
         return iter(
             [
                 self.reporting_year,
-                self.reporting_state,
-                self.consulate_country,
+                self.reporting_state.name,
+                self.consulate_country.name,
+                self.consulate_country.region,
+                self.consulate_country.income_group,
                 self.consulate_city,
                 self.visitor_visa_applications,
                 self.visitor_visa_issued,
@@ -186,6 +82,8 @@ class Line:
 class Dataset:
     """Class for keeping track of a collection of lines"""
 
+    countries: CountryList
+
     line: list[Line] = field(default_factory=list)
 
     def to_header(self):
@@ -193,6 +91,8 @@ class Dataset:
             "reporting_year",
             "reporting_state",
             "consulate_country",
+            "consulate_country_region",
+            "consulate_country_income_group",
             "consulate_city",
             "visitor_visa_applications",
             "visitor_visa_issued",
@@ -232,9 +132,9 @@ class Dataset:
         if pd.isna(x['Schengen State']) or pd.isna(x['Country where consulate is located']):
             return
         self.line.append(Line(reporting_year
-            ,str(x['Schengen State']).strip().upper()
-            ,map_country(str(x['Country where consulate is located']).strip())
-            ,map_city(str(x['Consulate']).strip())
+            ,self.countries.get(str(x['Schengen State']))
+            ,self.countries.get(str(x['Country where consulate is located']))
+            ,geography.map_city(str(x['Consulate']).strip())
             ,clean_number(x['Uniform visas applied for'])
             ,clean_number(x['Total  uniform visas issued (including MEV) \n'])
             ,clean_number(x['Uniform visas not issued'])))
@@ -243,9 +143,9 @@ class Dataset:
         if pd.isna(x['Member State']) or pd.isna(x['Country where consulate is located']):
             return
         self.line.append(Line(reporting_year
-            ,str(x['Member State']).strip().upper()
-            ,map_country(str(x['Country where consulate is located']).strip())
-            ,map_city(str(x['Consulate']).strip())
+            ,self.countries.get(str(x['Member State']))
+            ,self.countries.get(str(x['Country where consulate is located']))
+            ,geography.map_city(str(x['Consulate']).strip())
             ,clean_number(x['Short-stay visas applied for'])
             ,clean_number(x['Total  short-stay visas issued (including MEV) \n'])
             ,clean_number(x['Short-stay visas not issued'])))
@@ -254,9 +154,9 @@ class Dataset:
         if pd.isna(x['Schengen State']) or pd.isna(x['Country where consulate is located']):
             return
         self.line.append(Line(reporting_year
-            ,str(x['Schengen State']).strip().upper()
-            ,map_country(str(x['Country where consulate is located']).strip())
-            ,map_city(str(x['Consulate']).strip())
+            ,self.countries.get(str(x['Schengen State']))
+            ,self.countries.get(str(x['Country where consulate is located']))
+            ,geography.map_city(str(x['Consulate']).strip())
             ,clean_number(x['Short-stay visas applied for'])
             ,clean_number(x['Total  short-stay visas issued (including MEV) \n'])
             ,clean_number(x['Short-stay visas not issued'])))
@@ -265,18 +165,18 @@ class Dataset:
         if pd.isna(x['Schengen State']) or pd.isna(x['Country where consulate is located']):
             return
         self.line.append(Line(reporting_year
-            ,str(x['Schengen State']).strip().upper()
-            ,map_country(str(x['Country where consulate is located']).strip())
-            ,map_city(str(x['Consulate']).strip())
+            ,self.countries.get(str(x['Schengen State']))
+            ,self.countries.get(str(x['Country where consulate is located']))
+            ,geography.map_city(str(x['Consulate']).strip())
             ,clean_number(x['C visas applied for'])
             ,clean_number(x['Total C uniform visas issued (including MEV) \n'])
             ,clean_number(x['C visas not issued'])))
 
     def add_line_epsilon(self, x):
         self.line.append(Line(x['dYear']
-            ,str(x['receivingCountryName']).strip().upper()
-            ,map_country(str(x['sendingCountryName']).strip().upper())
-            ,map_city(str(x['sendingCityName']).strip().upper())
+            ,self.countries.get(str(x['receivingCountryName']))
+            ,self.countries.get(str(x['sendingCountryName']))
+            ,geography.map_city(str(x['sendingCityName']).strip().upper())
             ,clean_number(x['appliedABC'])
             ,clean_number(x['issuedABC'])
             ,clean_number(x['notIssuedABC'])))
@@ -303,6 +203,9 @@ inputfiles.add_file('2014_global_schengen_visa_stats_compilation_consulates_-_fi
 inputfiles.add_file('synthese_2013_with_filters_en.xls',2013,'Complete data', 'delta')
 inputfiles.add_file('evd_visa_practice_eu.csv',None,None,'epsilon')
 
-d = Dataset()
+countries = geography.CountryList()
+countries.load()
+
+d = Dataset(countries)
 d.load(inputfiles.sheets)
 d.to_csv()
