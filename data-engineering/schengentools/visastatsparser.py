@@ -29,6 +29,11 @@ class Parser:
         self.df = self.df.rename(columns = column_mapping)
         print('Renamed columns')
 
+        self.df["schengen_state"] = self.df["schengen_state"].str.strip()
+        self.df["origin_country"] = self.df["origin_country"].str.strip()
+        self.df["origin_consulate"] = self.df["origin_consulate"].str.strip()
+        print('Trimmed country and city names')
+
         self.df = self.df[self.df["schengen_state"].notna()]
         self.df = self.df[self.df["origin_country"].notna()]
         print('Removed irrelevant rows such as summary rows')
