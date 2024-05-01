@@ -1,49 +1,30 @@
-# Schengen visa project
+# Purpose
 
-The purpose of the Schengen visa project is to generate insights into the implementation of EUs common short-stay visa policy ('Schengen visa') and in turn position these findings in the wider debate on European migration policy and politics as well as EU implementation studies in general. 
+The EU visa policy repository contains source code for generating a dataset on visitor visas applied for, issued and not issued by European Union member states. 
 
-## Where to start
+# Overview and where to start
 
-Visualisations of the visa issuings statistics:
-- Map of the EU/Schengen states visa issuing consulates 
-  - [2020 consular map](https://mogenshobolth.github.io/schengen-visa/html/map-visa-issuing-consultates-2020.html)
-- Map of of the EU/Schengen states visa refusal rate (not issued rate) and applications received. Applications are on the same scale so the maps can compared over years.
-  - [2020 visa statistics map](https://mogenshobolth.github.io/schengen-visa/html/map-visa-statistics-2020.html)
-  - [2019 visa statistics map](https://mogenshobolth.github.io/schengen-visa/html/map-visa-statistics-2019.html)
-  - [2018 visa statistics map](https://mogenshobolth.github.io/schengen-visa/html/map-visa-statistics-2018.html)
-- Map comparing the refusal rates of the Schengen states. The refusal rate is calculated per state and year as the ratio of the not issued visas relative to the issued and not issued visas. 
-  - [2020 Schengen states map](https://mogenshobolth.github.io/schengen-visa/html/map-visa-statistics-compare-schengen-states-2020.html)
-  - [2019 Schengen states map](https://mogenshobolth.github.io/schengen-visa/html/map-visa-statistics-compare-schengen-states-2019.html)
-  - [2018 Schengen states map](https://mogenshobolth.github.io/schengen-visa/html/map-visa-statistics-compare-schengen-states-2018.html)
+The code for generating the dataset is in Python and consists of three files: 
+- Program.py, the main code for constructing the dataset
+- geography.py, helper methods for working with cities and countries
+- create-output-datasets.py, code for generating simple statistics for e.g. visualisation.
 
-Open the repo in binder to start exploring the notebooks.
+The raw data used to generate the dataset is in the "Input" folder.
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/mogenshobolth/schengen-visa/HEAD)
+The core dataset - visitor-visa-statistics.csv - is in the "Output" folder. The other datasets in the folder are aggregations on top of it. 
 
-Clone the repo locally and start analysing in Jupyter Notebooks.
+The repository contains configuration code for working with the code and data in VS Code using a Python docker development container. 
 
-## How to contribute
+# How to contribute
 
 If you are interested in contributing to the project please do reach out!
 
-## Background 
+# Data sources and acknowledgements
 
-The project builds upon my [PhD thesis](http://etheses.lse.ac.uk/551/) handed in at the [London School of Economics](https://www.lse.ac.uk). The thesis put in place a [European Visa Database](http://www.mogenshobolth.dk/evd/) (EVD) covering the period 2005-2012. Much has happened since then from a methodological perspective with the growth of Data Science as an independent discipline and the resulting diffusion of software enginnering tools and perspectives to other fields. This project hence also seeks to reconstruct this data using contemporary technologies. 
+The visa statistics are pulled from official European Union online sources: The Council Registry (2005-2008) and the Migration and Home Affairs Commission website (2009-2022). The raw data is processed (cleaned-up) as evidenced in the source code. The data for 2005-2012 have been imported relying on earlier data clean-up done in connection with the construction of the European Visa Database (see background section below).
 
-## Folder structure
+The country classification (income group and regions) are sourced from The World Bank: World Bank Country and Lending Groups: [Country classification dataset](ttps://datahelpdesk.worldbank.org/knowledgebase/articles/906519-world-bank-country-and-lending-groups)
 
-**data-science**
+# Background 
 
-The DS (Data Science) folder includes script for visual, descriptive and inferential analysis of the data. 
-
-**data-engineering**
-
-The DE (Data Engineering) folder includes script for data processing and preparation. 
-
-**data/bronze**
-
-Contains raw data without any changes applied
-
-**data/silver**
-
-Contains cleaned-up data with a number of transformations etc. applied to make the data nice and easy to work with.
+The EU visa policy repository builds upon my [PhD thesis](http://etheses.lse.ac.uk/551/) handed in at the [London School of Economics](https://www.lse.ac.uk). The thesis put in place a [European Visa Database](http://www.mogenshobolth.dk/evd/) (EVD) covering the period 2005-2012. 
