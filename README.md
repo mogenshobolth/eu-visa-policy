@@ -21,9 +21,11 @@ If you are interested in contributing to the project please do reach out!
 
 # Data sources and acknowledgements
 
-The visa statistics are pulled from official European Union online sources: The Council Registry (2005-2008) and the Migration and Home Affairs Commission website (2009-2022). The raw data is processed (cleaned-up) as evidenced in the source code. The data for 2005-2012 have been imported relying on earlier data clean-up done in connection with the construction of the European Visa Database (see background section below).
+The visa statistics are pulled from official European Union online sources: [The Council Document Register](https://www.consilium.europa.eu/en/documents-publications/public-register/public-register-search/) (2005-2008) and the Migration and Home Affairs Commission [website](https://ec.europa.eu/home-affairs/policies/schengen-borders-and-visa/visa-policy_en) (2009-2022). 
 
-The country classification (income group and regions) are sourced from The World Bank: World Bank Country and Lending Groups: [Country classification dataset](ttps://datahelpdesk.worldbank.org/knowledgebase/articles/906519-world-bank-country-and-lending-groups)
+The raw data is processed (cleaned-up) as evidenced in the source code. The data for 2005-2012 have been imported relying on earlier data clean-up done in connection with the construction of the European Visa Database (see background section).
+
+The country classification (income group and regions) are sourced from The World Bank: World Bank Country and Lending Groups: [Country classification dataset](https://datahelpdesk.worldbank.org/knowledgebase/articles/906519-world-bank-country-and-lending-groups)
 
 # Background 
 
