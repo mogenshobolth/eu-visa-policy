@@ -1,30 +1,34 @@
 import pandas as pd
 
 df = pd.read_csv('output/visitor-visa-statistics.csv')
-#df2 = df.groupby(['reporting_year','reporting_state'])['visitor_visa_applications'].sum()
-#df2.to_csv('output/visitor-visa-statistics-year-state.csv')
 
-df2 = df['reporting_state'].drop_duplicates()
-df2.to_csv('output/visitor-visa-statistics-reporting-states.csv', index=False)
-
-df2 = df[['consulate_country','consulate_city']].drop_duplicates()
-df2.to_csv('output/visitor-visa-statistics-consulates.csv', index=False)
-
-df2 = df[['consulate_country']].drop_duplicates()
-df2.to_csv('output/visitor-visa-statistics-consulate-countries.csv', index=False)
-
-#df2 = df[['reporting_year','reporting_state','visitor_visa_applications']]
-#df2 = df2.groupby(['reporting_year','reporting_state'])['visitor_visa_applications'].sum()
-#df2 = df2.pivot(columns='reporting_year',values='visitor_visa_applications')
-
+# Summary statistics on applications
 df.pivot_table(
-    values="visitor_visa_applications", index="reporting_state", columns="reporting_year", aggfunc="sum"
-).to_csv('output/visitor-visa-statistics-year-state.csv')
+    values="visitor_visa_applications", index="reporting_year", columns="consulate_country_region", aggfunc="sum"
+).to_csv('output/visitor-visa-statistics-applications-sum-year-region.csv')
 
-df.groupby(['reporting_year'])['visitor_visa_applications'].sum().to_csv('output/visitor-visa-statistics-years.csv')
+# Avg. refusal rate by consulate country and year over last five years, for geo-mapping 
+df[df['reporting_year'] >= 2018].groupby(['consulate_country','consulate_country_code'])['visitor_visa_refusal_rate'].mean().to_csv('output/visitor-visa-statistics-2018to2022-country-refusal-rate.csv')
 
-df.groupby(['reporting_year'])['consulate_city'].count().to_csv('output/visitor-visa-statistics-consulates.csv')
+# Avg. refusal rate by region and year
+df.pivot_table(
+    values="visitor_visa_refusal_rate", index="reporting_year", columns="consulate_country_region", aggfunc="mean"
+).to_csv('output/visitor-visa-statistics-refusal-rate-mean-year-region.csv')
 
-df.groupby(['reporting_year'])['visitor_visa_refusal_rate'].mean().to_csv('output/visitor-visa-statistics-consulate-refusal-rate.csv')
+# Avg. refusal rate by income group and year
+df.pivot_table(
+    values="visitor_visa_refusal_rate", index="reporting_year", columns="consulate_country_income_group", aggfunc="mean"
+).to_csv('output/visitor-visa-statistics-refusal-rate-year-mean-income-group.csv')
 
-df.groupby(['reporting_year']).agg({'visitor_visa_issued':'sum','visitor_visa_not_issued':'sum'}).to_csv('output/visitor-visa-statistics-years-issued.csv')
+# Variation in refusal rate by region and year
+df.pivot_table(
+    values="visitor_visa_refusal_rate", index="reporting_year", columns="consulate_country_region", aggfunc="std"
+).to_csv('output/visitor-visa-statistics-refusal-rate-stddev-year-region.csv')
+
+# Variation in refusal rate by income group and year
+df.pivot_table(
+    values="visitor_visa_refusal_rate", index="reporting_year", columns="consulate_country_income_group", aggfunc="std"
+).to_csv('output/visitor-visa-statistics-refusal-rate-stddev-year-income-group.csv')
+
+
+
