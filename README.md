@@ -11,9 +11,9 @@ The code for generating the dataset is in Python and consists of three files:
 
 The raw data used to generate the dataset is in the "Input" folder.
 
-The core dataset - visitor-visa-statistics.csv - is in the "Output" folder. The other datasets in the folder are aggregations on top of it. 
+The core dataset - visitor-visa-statistics.csv - is in the "Output" folder. The other datasets in the folder are aggregations on top of it. The core dataset is also available for download on [Kaggle](https://www.kaggle.com/datasets/mogenshobolth/european-union-schengen-visa-statistics/data).
 
-The repository contains configuration code for working with the code and data in VS Code using a Python docker development container. 
+The repository contains configuration code for working with the code and data in VS Code using a Python docker development container.
 
 # How to contribute
 
