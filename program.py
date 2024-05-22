@@ -184,6 +184,8 @@ class Dataset:
             ,clean_number(x['notIssuedABC'])))
 
 inputfiles = InputFiles()
+inputfiles.add_file_alpha('2023-schengen-visa-statistics-consulates_en.xlsx',2023)
+inputfiles.add_file('2023-schengen-visa-statistics-consulates_en.xlsx',2023, 'BG, CY, RO', 'beta')
 inputfiles.add_file_alpha('Visa statistics for consulates in 2022_en.xlsx',2022)
 inputfiles.add_file_beta('Visa statistics for consulates in 2022_en.xlsx',2022)
 inputfiles.add_file_alpha('Visa statistics for consulates 2021_0.xlsx',2021)

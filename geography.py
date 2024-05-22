@@ -56,7 +56,8 @@ def map_country(x) -> str:
             'CAPE VERDE': 'CABO VERDE',
             'SAO TOME AND PRINCIPE': 'SÃO TOMÉ AND PRÍNCIPE',
             'YEMEN': 'YEMEN, REP.',
-            'BURMA': 'MYANMAR'
+            'BURMA': 'MYANMAR',
+            'AUSTRILIA': 'AUSTRALIA'
         }.get(x, x)
 
 def map_city(x) -> str:
