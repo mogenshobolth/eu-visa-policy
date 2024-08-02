@@ -7,6 +7,13 @@ df.pivot_table(
     values="visitor_visa_applications", index="reporting_year", columns="consulate_country_region", aggfunc="sum"
 ).to_csv('output/visitor-visa-statistics-applications-sum-year-region.csv')
 
+# Summary statistics on issued and not issued
+df2 = df.pivot_table(
+    values=["visitor_visa_issued","visitor_visa_not_issued"], index="reporting_year", aggfunc="sum"
+)
+df2["visitor_visa_refusal_rate"] = df2["visitor_visa_not_issued"] / (df2["visitor_visa_issued"] + df2["visitor_visa_not_issued"])
+df2.to_csv('output/visitor-visa-statistics-notissued-sum-year.csv')
+
 # Avg. refusal rate by consulate country and year over last five years, for geo-mapping 
 df[df['reporting_year'] >= 2018].groupby(['consulate_country','consulate_country_code'])['visitor_visa_refusal_rate'].mean().to_csv('output/visitor-visa-statistics-2018to2022-country-refusal-rate.csv')
 
