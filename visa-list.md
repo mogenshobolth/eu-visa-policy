@@ -1,4 +1,13 @@
 
+**Sources**
+
+Consolidated visa list 2001 version.
+https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A02001R0539-20170611
+
+Consolidated visa list 2018 version. 
+https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A02018R1806-20230515
+
+
 **Council Regulation (EC) No 539/2001**
 
 Annex 1: 131 states, 3 entities
@@ -17,6 +26,27 @@ Delta: -1 per 2002
 Annex 1: Ecuador added, East Timor moved to list of states
 Effective from: 01.06.2023
 Delta: +1 per 2003
+
+**Council Regulation (EC) No 851/2005**
+
+Reciprocity mechanism, no changes to country list
+
+**Council Regulation (EC) No 1791/2006**
+
+Accession of Bulgaria and Romania - removed from annex 2
+
+**Council Regulation (EC) No 1932/2006**
+
+Annex 1: Bolivia added (effective 01.04.2007)
+Annex 1: Antigua and Barbuda, the Bahamas, Barbados, Mauritius, Saint Kitts and Nevis, and the Seychelles removed conditional on entering visa waiver agreement
+Annex 1: East Timor renamed to Timor-Leste
+Annex 1: Federal Republic of Yugoslavia (Serbia-Montenegro) split into Serbia and Montenegro
+Annex 1: Western Samoa renamed to Samoa
+Annex 1: New part with specifics of British citizens overseas
+
+Effects:
++1 from 2007 (Bolivia)
++1 from 2001 (backdating of Serbia/Montenegro split)
 
 **Regulation (EU) 2018/1806**
 
